@@ -41,7 +41,7 @@
 .main_wrap .save_date {
     display: block;
     margin: 0 0 20px;
-    font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSans';
     /* font-family: 'S-CoreDream'; */
     font-size: 4.4rem;
     font-weight: bold;
@@ -292,4 +292,118 @@
     content: '';
 }
 
+.calander {
+    padding: 30px 15px;
+    background-color: #f4f4f4;
+}
 
+.cal-wrap {
+    padding: 10px 5px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.cal-title {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px;
+    padding: 20px;
+}
+.cal-title::before {
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    width: calc(100% - 30px);
+    height: 1px;
+    background-color: #eee;
+    content: '';
+}
+
+.cal-title .month {
+    font-family: 'GmarketSans';
+    font-size: 18px;
+    color: #333;
+}
+.cal-title .time {
+    /* font-family: 'GmarketSans'; */
+    font-size: 15px;
+    color: #333;
+}
+.cal-table {
+    width: 100%;
+}
+
+.cal-table tr {
+    height: 50px;
+}
+
+.cal-table thead tr {
+    height: 30px;
+}
+
+.cal-table thead th {
+    font-size: 13px;
+    font-weight: 400;
+    color: #222;
+    text-align: center;
+}
+
+.cal-table tbody td {
+    font-family: 'GmarketSans';
+    font-size: 14px;
+    color: #787878;
+    text-align: center;
+}
+
+.cal-table tbody td.sunday {
+    color: #ff6666;
+}
+
+.cal-table tbody td.w-day {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    z-index: 1;
+}
+
+.cal-table tbody td.w-day::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #f79e9e;
+    content: '';
+    z-index: -1;
+}
+
+
+
+.dday-wrap {
+    margin: 40px 0 0;
+    text-align: center;
+}
+
+.dday-wrap .d-text {
+    line-height: 1.5;
+    font-size: 14px;
+    color: #333;
+}
+
+.dday-wrap .d-day {
+    font-family: 'GmarketSans';
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #df8383;
+}
