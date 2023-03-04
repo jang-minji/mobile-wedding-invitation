@@ -1,63 +1,42 @@
 .invite_inner { width: 100%; max-width: 420px; margin: 0 auto; background-color: #fafafa; overflow: hidden; /* background: linear-gradient(to bottom, #f5d9d3 16%, #fff 36%); */}
 
 .title_wrap { margin: 0 0 20px; text-align: center; } 
-
 .title_wrap .ico { display: block; margin: 0 0 15px;; font-style: normal; } 
-
 .title_wrap .title { display: block; line-height: 1.45; font-size: 1.7rem; font-family: 'Bitter'; letter-spacing: 0.05em; /* text-transform: uppercase; */}
 
 .main_wrap { display: flex; flex-direction: column; justify-content: space-around; /* padding: 70px 50px; */
  height: 100vh; padding: 60px 0; text-align: center; color: #333; /* background: url('../images/IMG_8506.jpg') no-repeat 0 bottom / contain; */}
-
 .main_wrap .mini_text { display: block; margin: 0 0 5px; line-height: 1.5; font-size: 1.2rem; color: #f79e9e; letter-spacing: 0.05em; text-transform: uppercase; } 
-
 .main_wrap .save_date { display: block; margin: 0 0 10px; font-family: 'GmarketSans'; /* font-family: 'S-CoreDream'; */
  font-size: 4.4rem; font-weight: bold; color: #f79e9e; letter-spacing: 0.08em; } 
 
 .main_wrap .main_title { display: block; font-size: 1.7rem; color: #333; letter-spacing: -0.001em; } 
-
 .main_wrap .main_title span { display: inline-block; margin: 0 5px; font-size: 1.4rem; } 
-
 .main_wrap .bottom_info { display: block; margin: 30px 0 0; line-height: 1.8; } 
-
 .visual_wrapper_concept01 { position: relative; margin: 20px 0;}
-
 .visual_wrapper_concept01 img { display: block; width: 100%; } 
 
 .waves { position: relative; width: 100%; height: 40px; margin-bottom: -7px}
-
 .parallax>use { animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite}
-
 .parallax>use:nth-child(1) { animation-delay: -2s; animation-duration: 7s}
-
 .parallax>use:nth-child(2) { animation-delay: -3s; animation-duration: 10s}
-
 .parallax>use:nth-child(3) { animation-delay: -4s; animation-duration: 13s}
-
 .parallax>use:nth-child(4) { animation-delay: -5s; animation-duration: 20s}
 
 @keyframes move-forever { 
- 0% { transform: translate3d(-90px, 0, 0)}
-
- 100% { transform: translate3d(85px, 0, 0)} 
- }
+    0% { transform: translate3d(-90px, 0, 0)}
+    100% { transform: translate3d(85px, 0, 0)} 
+}
 
 .blr { height: 30px; background-color: rgba(255, 255, 255, .5); background-color: rgba(255, 255, 255, .99); position: absolute; left: -10%; margin: auto; width: 120%; filter: blur(10px); -webkit-filter: blur(8px); display: none}
-
 .blr.blr01 { top: -15px}
-
 .blr.blr02 { bottom: -15px}
-
 .wave01 { position: relative; top: 30px; transform: scaleY(-1); transition: .3s; z-index: 1; /* display: none */}
-
 .wave02 { position: relative; top: -30px; margin-bottom: -30px; /* display: none */}
 
-
 /* .main_wrap .visual_img_wrapper { position: relative; overflow: hidden; margin-bottom: 30px; border-radius: 200px 200px 0 0; box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px; } 
-
 .main_wrap .visual_img_wrapper img { display: block; width: 100%; } 
 .main_wrap .visual_img_wrapper .moving { background-size: cover; background-repeat: no-repeat; height: 100%; position: absolute; top: 0; width: 100%; } */
-
 /* .main_wrap .visual_img_wrapper .moving.flower3 { animation: flower3 10s linear infinite; background-image: url(../images/flower3.png), url(/storefarm/card/movie/flower4.png) !important; pointer-events: none; background-repeat: inherit !important; } */
 
 .main_wrap .visual_img_wrapper .moving.heart2 { animation: heart2 20s linear infinite; background-image: url(../images/heart2.png), url(../images/heart3.png) !important; pointer-events: none; background-repeat: inherit !important; } 
@@ -74,73 +53,51 @@
 
 
 /* 인사말 */
-
 .greeting_wrap { padding: 70px 0 50px; text-align: center; background-color: #fff; border-radius: 200px 200px 0 0; box-shadow: 0px -10px 40px -10px rgb(0 0 0 / 0.8%); } 
-
 .greeting_wrap .greeting_text { line-height: 2; font-size: 1.5rem; color: #222; letter-spacing: -0.015em; } 
-
 .call_area { position: relative; margin: 50px 0 0; } 
-
 .call_area:before { display: block; position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; width: 50px; height: 1px; background-color: #ddd; content: ''; } 
-
 .call_area .call_list { padding: 30px 0; } 
-
 .call_area .call_list .list_item { display: flex; justify-content: center; align-items: center; } 
-
 .call_area .call_list .list_item p { line-height: 1.8; font-size: 1.6rem; color: #333; } 
-
 .call_area .call_list .list_item .mini_txt { display: inline-block; margin: 0 7px 0 3px; font-size: 1.5rem; color: #777; } 
 
 /* 갤러리 */
 .photo_wrap { padding: 60px 0; background-color: #fff; } 
-
 .photo_list { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; } 
-
 .photo_list li { padding: 5px; width: calc((100% - 20px) / 3); } 
-
 .photo_list .img_box { position: relative; overflow: hidden; border-radius: 7px; background-color: #eee; } 
-
 .photo_list .img_box::before { display: block; padding-top: 100%; content: ''; } 
 
-.calander { padding: 30px 15px; background-color: #f4f4f4; } 
-
+.calander { padding: 30px 25px 40px; background-color: #f4f4f4; } 
 .cal-wrap { padding: 10px 5px; background-color: #fff; border-radius: 15px; } 
-
-.cal-title { position: relative; display: flex; justify-content: space-between; align-items: center; margin: 0 0 20px; padding: 20px; } 
-
+.cal-title { position: relative; display: flex; justify-content: space-between; align-items: center; margin: 0 0 20px; padding: 20px 20px 10px; } 
 .cal-title::before { position: absolute; bottom: 0; left: 0; right: 0; margin: 0 auto; display: block; width: calc(100% - 30px); height: 1px; background-color: #eee; content: ''; } 
-
 .cal-title .month { font-family: 'GmarketSans'; font-size: 18px; color: #333; } 
-
-.cal-title .time { /* font-family: 'GmarketSans'; */
- font-size: 15px; color: #333; } 
-
+.cal-title .time { /* font-family: 'GmarketSans'; */ font-size: 15px; color: #333; } 
 .cal-table { width: 100%; } 
-
-.cal-table tr { height: 50px; } 
-
+.cal-table tr { height: 40px; } 
 .cal-table thead tr { height: 30px; } 
-
 .cal-table thead th { font-size: 13px; font-weight: 400; color: #222; text-align: center; } 
-
 .cal-table tbody td { font-family: 'GmarketSans'; font-size: 14px; color: #787878; text-align: center; } 
-
 .cal-table tbody td.sunday { color: #ff6666; } 
-
 .cal-table tbody td.w-day { position: relative; font-weight: 700; color: #fff; z-index: 1; } 
-
 .cal-table tbody td.w-day::before { position: absolute; top: 50%; transform: translateY(-50%); left: 0; right: 0; margin: 0 auto; display: block; width: 36px; height: 36px; border-radius: 50%; background-color: #f79e9e; content: ''; z-index: -1; } 
 
-
-
-.dday-wrap { margin: 40px 0 0; text-align: center; } 
-
+.dday-wrap { margin: 30px 0 0; text-align: center; } 
 .dday-wrap .d-text { line-height: 1.5; font-size: 14px; color: #333; } 
-
 .dday-wrap .d-day { font-family: 'GmarketSans'; font-size: 15px; line-height: 1.5; font-weight: 400; color: #df8383; } 
 
 .scroll_wrap { position: absolute; top: 0; left: 0; width: 100%; height: 100vh; overflow-y: scroll; visibility: visible; opacity: 1; transform: translate(0, 0); transition: transform 0.3s; } 
-
 .scroll_wrap.on { visibility: visible; opacity: 1; transform: translate(0, 0); } 
-
 .scroll_wrap.on .sec-hint:before { animation: hint-bounce-ani 0.8s 2.3s forwards; } 
+
+/* 마음 전하실 곳 */
+.account_wrap {padding: 60px 0;}
+.account_wrap .title_wrap .title {font-family: 'Prentendard'; font-weight: 500; color: #111; letter-spacing: 0;}
+
+.bride_groom {}
+
+
+
+
