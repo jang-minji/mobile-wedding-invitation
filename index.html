@@ -15,11 +15,16 @@
 <div id="wrap" class="">
     <div id="container" class="invite_inner">
         <div class="main_wrap">
-            <span class="mini_text">save the date</span>
-            <strong class="save_date">04.23</strong>
-            <strong class="main_title">선수민<span>❤️</span>장민지</strong>
-            
-            <div class="visual_wrapper_concept01">
+            <div class="top_txt">
+                <span class="mini_text">save the date</span>
+                <strong class="save_date">04.23</strong>
+                <strong class="main_title">💕 수민, 민지 결혼합니다 💕</strong>
+            </div>
+            <!-- <strong class="main_title">수민<span>❤️</span>민지</strong> -->
+            <div class="img_box">
+                <img src="images/IMG_8506.jpg" />
+            </div>
+            <!-- <div class="visual_wrapper_concept01">
                 <div class="blr blr01"></div>
                 <div class="wave01">
                     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -46,7 +51,7 @@
                     </svg>
                 </div>
                 <div class="blr blr02"></div>
-            </div>
+            </div> -->
             <!-- <div class="visual_img_wrapper">
                 <div class="moving heart2"></div>
                 <img src="images/main_visual03.jpg" />
@@ -301,24 +306,6 @@ function initAni(){
 
 function addEvents() {
 	var prevPos = 0;
-
-	// window.addEventListener("wheel", function(e){
-	// 	if(e.deltaY > 0){
-	// 		scollUpdownMotion("up");
-	// 	}
-	// });
-
-	// window.addEventListener("touchstart", function(e){
-	// 	prevPos = e.changedTouches[0].clientY;
-	// });
-
-	// window.addEventListener("touchend", function(e){
-	// 	if(hasScroll) return;
-	// 	var currentPos = e.changedTouches[0].clientY;
-
-	// 	if(Math.abs(prevPos-currentPos) > 5) scollUpdownMotion(prevPos > currentPos?"up":"down");
-	// });
-
 	$window.on("resize", resize).trigger("resize");
 	$secScroll.on("scroll", scroll).trigger("scroll");
 
