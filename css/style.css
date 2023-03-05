@@ -4,15 +4,15 @@
 .title_wrap .ico { display: block; margin: 0 0 15px;; font-style: normal; } 
 .title_wrap .title { display: block; line-height: 1.45; font-size: 1.7rem; font-family: 'Bitter'; letter-spacing: 0.05em; /* text-transform: uppercase; */}
 
-.main_wrap { display: flex; flex-direction: column; justify-content: space-around; /* padding: 70px 50px; */
- height: 100vh; padding: 60px 0; text-align: center; color: #333; /* background: url('../images/IMG_8506.jpg') no-repeat 0 bottom / contain; */}
+.main_wrap { display: flex; flex-direction: column; justify-content: center; /* padding: 70px 50px; */
+ height: 100vh; padding: 30px 0 60px; text-align: center; color: #333; /* background: url('../images/IMG_8506.jpg') no-repeat 0 bottom / contain; */}
 .main_wrap .mini_text { display: block; margin: 0 0 5px; line-height: 1.5; font-size: 1.2rem; color: #f79e9e; letter-spacing: 0.05em; text-transform: uppercase; } 
 .main_wrap .save_date { display: block; margin: 0 0 10px; font-family: 'GmarketSans'; /* font-family: 'S-CoreDream'; */
  font-size: 4.4rem; font-weight: bold; color: #f79e9e; letter-spacing: 0.08em; } 
 
 .main_wrap .main_title { display: block; font-size: 1.7rem; color: #333; letter-spacing: -0.001em; } 
 .main_wrap .main_title span { display: inline-block; margin: 0 5px; font-size: 1.4rem; } 
-.main_wrap .bottom_info { display: block; margin: 30px 0 0; line-height: 1.8; } 
+
 .visual_wrapper_concept01 { position: relative; margin: 20px 0;}
 .visual_wrapper_concept01 img { display: block; width: 100%; } 
 
@@ -48,12 +48,18 @@
 }
 
 
-.main_wrap .img_box { padding: 30px 40px 0; } 
+.main_wrap .img_box { padding: 0 40px; } 
 .main_wrap .img_box img { width: 100%; vertical-align: top; } 
+.main_wrap .we_name {display: flex; margin: 20px 0 0; align-items: flex-end; justify-content: center;}
+.main_wrap .we_name .name {display: block; margin: 0 5px; font-family: 'IropkeBatangM'; font-size: 20px; letter-spacing: 0.1em;}
+.main_wrap .we_name .and {font-style: italic; font-family: 'IropkeBatangM';}
+
+.main_wrap .bottom_info {display: block; margin: 10px 0 0; line-height: 1.6; font-size: 14px;} 
 
 
 /* 인사말 */
-.greeting_wrap { padding: 70px 0 50px; text-align: center; background-color: #fff; border-radius: 200px 200px 0 0; box-shadow: 0px -10px 40px -10px rgb(0 0 0 / 0.8%); } 
+.greeting_wrap { padding: 60px 0 50px; text-align: center; background-color: #fff; border-radius: 200px 200px 0 0; box-shadow: 0px -10px 40px -10px rgb(0 0 0 / 0.8%); } 
+/* rgb(254, 248, 214) */
 .greeting_wrap .greeting_text { line-height: 2; font-size: 1.5rem; color: #222; letter-spacing: -0.015em; } 
 .call_area { position: relative; margin: 50px 0 0; } 
 .call_area:before { display: block; position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; width: 50px; height: 1px; background-color: #ddd; content: ''; } 
@@ -69,7 +75,7 @@
 .photo_list .img_box { position: relative; overflow: hidden; border-radius: 7px; background-color: #eee; } 
 .photo_list .img_box::before { display: block; padding-top: 100%; content: ''; } 
 
-.calander { padding: 30px 25px 40px; background-color: #f4f4f4; } 
+.calander { padding: 30px 25px 40px; background-color: #f8f8f8; } 
 .cal-wrap { padding: 10px 5px; background-color: #fff; border-radius: 15px; } 
 .cal-title { position: relative; display: flex; justify-content: space-between; align-items: center; margin: 0 0 20px; padding: 20px 20px 10px; } 
 .cal-title::before { position: absolute; bottom: 0; left: 0; right: 0; margin: 0 auto; display: block; width: calc(100% - 30px); height: 1px; background-color: #eee; content: ''; } 
@@ -94,10 +100,45 @@
 
 /* 마음 전하실 곳 */
 .account_wrap {padding: 60px 0;}
+.account_wrap .title_wrap {margin: 0 0 40px;}
 .account_wrap .title_wrap .title {font-family: 'Prentendard'; font-weight: 500; color: #111; letter-spacing: 0;}
 
-.bride_groom {}
+.bride_groom {display: flex; width: 100%; padding: 0 25px; justify-content: center; align-items: center;}
+.bride_groom li {width: 100%; text-align: center;}
+.bride_groom .tit {display: block; font-size: 16px; font-weight: 500; color: #333;}
 
+.account_wrap .contact_box {display: flex; margin: 15px 0 10px; justify-content: center; align-items: center; flex-direction: row;}
+.account_wrap .contact_box a {display: block; margin: 0 5px; width: 50px; height: 50px; line-height: 50px; font-size: 13px; color: #333; text-align: center; border-radius: 50%; background-color: #ddd;}
 
+.account_box {display: flex; justify-content: center; align-items: center; flex-direction: row;}
+.account_box button {display: block; margin: 0 3px; overflow: hidden; width: 66px; height: 30px; padding: 0 10px; border-radius: 15px;}
+.account_box .btn_account {font-size: 12px; color: #fff; background-color: #f79e9e;}
+.account_box .btn_kpay {text-indent: -9999px; background: #ffeb03 url('../images/payment_icon_yellow_large.png') no-repeat center center / 48px;}
+.groom_area .account_box .btn_account {background-color: #9ec0f7;}
+/* .parents_area {margin: 60px 0 0;}
+.parents_area .title {display: block; margin: 0 0 30px; font-size: 16px; color: #777; text-align: center;}
+.parents_list {display: flex; width: 100%; padding: 0 25px; justify-content: center; align-items: center;}
+.parents_list li {width: 100%; text-align: center;}
+.parents_list .tit {display: block; margin: 0 0 20px; font-size: 16px; font-weight: 500;}
+.parents_list .groom_parents .tit {color: #8CC0DE;}
+.parents_list .bride_parents .tit {color: #f79e9e;}
+.parents_list .mom {margin: 20px 0 0;}
+.parents_list .name {font-size: 14px; font-weight: 500; color: #111;} */
 
-
+.parents_area {margin: 60px 0 0;}
+.parents_area .title {display: block; margin: 0 0 30px; font-size: 16px; color: #777; text-align: center;}
+.parents_list {width: 100%; padding: 0 25px;}
+.parents_list li {width: 100%; overflow: hidden; background-color: #fff; border-radius: 5px; border: 1px solid #ddd;}
+.parents_list li + li {margin: 15px 0 0;}
+.parents_list .tit {position: relative; display: block; padding: 0 20px; line-height: 48px; font-size: 15px; font-weight: 500; color: #111;}
+.parents_list .tit::before {display: block; position: absolute; top: 50%; transform: translateY(-50%); right: 20px; width: 12px; height: 48px; background: url('../images/ico_dropdown.png') no-repeat center center / contain; content: ''; transition: all 0.3s ease;}
+.parents_list .tit.open::before {transform: translateY(-50%) rotate(180deg);}
+.content_box {display: none; padding: 10px 0 20px;}
+.content_box .list_item {display: flex; padding: 10px 20px; justify-content: space-between; align-items: center;}
+.content_box .list_item .button_box {display: flex; align-items: center;}
+.content_box .button_box .contact_box {margin: 0;}
+.content_box .button_box .contact_box a {width: 30px; height: 30px; text-indent: -9999px;}
+.content_box .button_box .contact_box .btn_call {background: url('../images/ico_call.png') no-repeat center center / 20px;}
+.content_box .button_box .contact_box .btn_msg {background: url('../images/ico_message.png') no-repeat center center / 20px;}
+.content_box .button_box .account_box button {margin: 0;}
+.parents_list .name {font-size: 14px; font-weight: 500; color: #111;}
