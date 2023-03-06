@@ -219,8 +219,35 @@
                     </li>
                 </ul>
             </div>
+            
 
             <!-- 오시는 길 -->
+            <div class="location_wrap">
+                <div class="title_wrap">
+                    <i class="ico">💒</i>
+                    <h3 class="title">오시는 길</h3>
+                </div>
+                <div class="map_area">
+                    <div id="map" class="kakao_map"></div>
+                    <a href="http://kko.to/1VFMBGzxgJ" target="_blank">지도를 자세히 보려면 여기를 눌러주세요</a>
+                </div>
+                <div class="location_info">
+                    <strong>소풍컨벤션 7층 라온제나홀</strong>
+                    <p>경기 부천시 송내대로 239 (상동, 소풍(부천터미널))</p>
+                    <span>Tel. 032-624-7777</span>
+                </div>
+                <ul class="wayto anibox hd visible animated fadeInUp">
+                    <li class="f16">
+                    <span class="n f18">지하철</span>
+                    7호선 상동역 1번 출구에서 도보 2분 거리
+                    </li>
+                    <li class="f16">
+                    <span class="n f18">버스</span>
+                    홈플러스 하차 : 23-2, 53, 83, 37, 50-1, 59, 59-1, 66, 70, 87<br>소풍터미널 하차 : 6-2, 56, 61, 27
+                    </li>
+                </ul>
+            </div>
+
 
             <!-- 방명록 -->
 
@@ -324,7 +351,38 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=18068602f4b34ef88db57303d41e5acc"></script>
 <script>
+
+var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+var options = { //지도를 생성할 때 필요한 기본 옵션
+	center: new kakao.maps.LatLng(37.503541566823145, 126.75669899709962), //지도의 중심좌표.
+	level: 3 //지도의 레벨(확대, 축소 정도)
+};
+
+var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+// 마커가 표시될 위치입니다 
+var markerPosition  = new kakao.maps.LatLng(37.503541566823145, 126.75669899709962); 
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
+function zoomIn() {
+    map.setLevel(map.getLevel() - 1);
+}
+
+// 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+function zoomOut() {
+    map.setLevel(map.getLevel() + 1);
+}
+
+
 $(document).ready(function () {
 
     $('.parents_list .tit').click(function(){
@@ -402,7 +460,7 @@ const $window = $(window);
 
 function init(){
 	initAni();
-	addEvents();
+	// addEvents();
 }
 
 function initAni(){
