@@ -227,23 +227,25 @@
                     <i class="ico">💒</i>
                     <h3 class="title">오시는 길</h3>
                 </div>
+                <div class="location_info">
+                    <strong class="name">소풍컨벤션 7층 라온제나홀</strong>
+                    <p class="addr">경기 부천시 송내대로 239 (상동, 소풍(부천터미널))</p>
+                    <span class="tel">Tel. 032-624-7777</span>
+                </div>
                 <div class="map_area">
                     <div id="map" class="kakao_map"></div>
-                    <a href="http://kko.to/1VFMBGzxgJ" target="_blank">지도를 자세히 보려면 여기를 눌러주세요</a>
+                    <a class="btn_map_detail" href="http://kko.to/1VFMBGzxgJ" target="_blank">지도를 자세히 보려면 여기를 눌러주세요</a>
                 </div>
-                <div class="location_info">
-                    <strong>소풍컨벤션 7층 라온제나홀</strong>
-                    <p>경기 부천시 송내대로 239 (상동, 소풍(부천터미널))</p>
-                    <span>Tel. 032-624-7777</span>
-                </div>
-                <ul class="wayto anibox hd visible animated fadeInUp">
-                    <li class="f16">
-                    <span class="n f18">지하철</span>
-                    7호선 상동역 1번 출구에서 도보 2분 거리
+                
+                <ul class="wayto_list">
+                    <li class="item subway">
+                        <span class="tit">지하철</span>
+                        <span class="txt">7호선 상동역 1번 출구에서 도보 2분 거리</span>
                     </li>
-                    <li class="f16">
-                    <span class="n f18">버스</span>
-                    홈플러스 하차 : 23-2, 53, 83, 37, 50-1, 59, 59-1, 66, 70, 87<br>소풍터미널 하차 : 6-2, 56, 61, 27
+                    <li class="item bus">
+                        <span class="tit">버스</span>
+                        <span class="txt">홈플러스 하차 : 23-2, 53, 83, 37, 50-1, 59, 59-1, 66, 70, 87</span>
+                        <span class="txt">소풍터미널 하차 : 6-2, 56, 61, 27</span>
                     </li>
                 </ul>
             </div>
@@ -278,7 +280,7 @@
                             </div>
                             <div class="account_box">
                                 <button type="button" class="btn_account">계좌번호</button>
-                                <button type="button" class="btn_kpay">카카오페이</button>
+                                <button type="button" class="btn_kpay" onclick="location.href='https://qr.kakaopay.com/281006011000007063442902'">카카오페이</button>
                             </div>
                         </li>
                     </ul>
